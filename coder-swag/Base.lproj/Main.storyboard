@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kTk-kz-zUo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kTk-kz-zUo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,19 +23,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-i5-tFZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-i5-tFZ">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="155" id="pxV-aC-l5y" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="155" id="pxV-aC-l5y" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pxV-aC-l5y" id="AQl-Hg-eTZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-yA-sUh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="148.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmm-G1-bLC">
                                                     <rect key="frame" x="108.5" y="63.5" width="158" height="28"/>
@@ -51,10 +50,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Gfg-yA-sUh" firstAttribute="leading" secondItem="AQl-Hg-eTZ" secondAttribute="leading" id="32y-6g-kf7"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gfg-yA-sUh" secondAttribute="bottom" constant="3" id="4Rw-K6-pPl"/>
                                                 <constraint firstItem="Tmm-G1-bLC" firstAttribute="centerY" secondItem="AQl-Hg-eTZ" secondAttribute="centerY" id="C7D-wZ-zzS"/>
                                                 <constraint firstItem="Tmm-G1-bLC" firstAttribute="centerX" secondItem="AQl-Hg-eTZ" secondAttribute="centerX" id="SQK-Ly-d0L"/>
-                                                <constraint firstItem="Gfg-yA-sUh" firstAttribute="top" secondItem="AQl-Hg-eTZ" secondAttribute="top" id="mPj-tp-V5N"/>
-                                                <constraint firstAttribute="bottom" secondItem="Gfg-yA-sUh" secondAttribute="bottom" id="sGA-z2-5OF"/>
+                                                <constraint firstItem="Gfg-yA-sUh" firstAttribute="top" secondItem="AQl-Hg-eTZ" secondAttribute="top" constant="3" id="c1L-64-cR0"/>
                                                 <constraint firstAttribute="trailing" secondItem="Gfg-yA-sUh" secondAttribute="trailing" id="vbE-Pg-PeS"/>
                                             </constraints>
                                         </tableViewCellContentView>
